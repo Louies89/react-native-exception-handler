@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:text="Error !"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:text="Unexpected Error !\nPlease Restart The Application" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/eh_restart_button"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:background="#1976d2"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:text="Restart"/>
+            <Button
+                android:id="@+id/eh_quit_button"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:background="#1976d2"
+                android:textColor="#fff"
+                android:text="Close"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/eh_stack_trace_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEE"
+            android:text=""
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
