@@ -34,7 +34,7 @@ dependencies {
     def reactNativeVersion = project.hasProperty('reactNativeVersion') ? project.reactNativeVersion : "+"
 	def firebaseCrashlyticsVersion = project.hasProperty('firebaseCrashlyticsVersion') ? project.firebaseCrashlyticsVersion : "2.9.+"
     
-    compile "com.facebook.react:react-native:$reactNativeVersion" //Previously +
-    compile "com.crashlytics.sdk.android:crashlytics:${project.firebaseCrashlyticsVersion}"
+    implementation "com.facebook.react:react-native:$reactNativeVersion" //Previously +
+    implementation "com.crashlytics.sdk.android:crashlytics:${project.firebaseCrashlyticsVersion}"
 }
   
